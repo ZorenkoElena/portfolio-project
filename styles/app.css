@@ -1,3 +1,181 @@
+:root {
+	--main-color: #e3d8d9;
+	--second-color: #333333;
+	--third-color: #fb9f82;
+	--forth-color: #e5967d;
+	--plain-text: #51565e;
+
+	--heading-font-family: "Playfair Display", serif;
+	--default-font-family: "Lato", sans-serif;
+}
+
 body {
 	margin-top: 100px;
+	margin-bottom: 60px;
+	background-color: var(--main-color);
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+p {
+	font-family: var(--default-font-family);
+	color: var(--plain-text);
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.nav-link {
+	color: #8c4f3b;
+}
+.nav-link:hover {
+	color: var(--forth-color);
+}
+.navbar-brand {
+	color: #774b4b;
+}
+.portfolio-image {
+	border-left: 10px solid var(--forth-color);
+	padding-left: 18px;
+}
+
+.welcome-page h1 {
+	font-family: var(--heading-font-family);
+	font-weight: bold;
+	font-size: 80px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.welcome-page h2 {
+	font-family: var(--default-font-family);
+	color: var(--plain-text);
+}
+.greeting {
+	font-size: 29px;
+	text-align: center;
+	color: var(--plain-text);
+}
+
+.cv-link {
+	background-color: transparent;
+	color: #cf7154;
+
+	text-decoration: none;
+	margin-bottom: 100px;
+	padding: 8px 14px;
+	border-radius: 20px;
+	border: 2px solid var(--forth-color);
+	transition: all 400ms ease;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.cv-link:hover {
+	background-color: var(--forth-color);
+	color: #6d3838;
+}
+
+.about-me-page h1 {
+	font-family: var(--heading-font-family);
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid var(--third-color);
+}
+.list-of-duty {
+	font-family: var(--default-font-family);
+	color: var(--plain-text);
+	font-size: 18px;
+	line-height: 1.5;
+}
+.about-me-page ul {
+	color: var(--plain-text);
+}
+.about-me-image {
+	width: 400px;
+}
+
+.main-block-info {
+	border-bottom: 1px solid var(--third-color);
+	padding-bottom: 15px;
+}
+
+.contact-page h1 {
+	font-family: var(--heading-font-family);
+	font-weight: bold;
+	text-align: left;
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.contact-link a {
+	text-decoration: none;
+	color: var(--second-color);
+	font-size: 18px;
+	line-height: 2;
+	color: #774b4b;
+}
+.contact-link a:hover {
+	color: #c4395d;
+}
+.contact-link i {
+	color: #566d84;
+}
+.contact-link span {
+	color: #566d84;
+}
+.contact-link p {
+	color: var(--second-color);
+	font-size: 22px;
+	line-height: 2;
+	font-family: var(--heading-font-family);
+	margin-top: 25px;
+}
+
+.project-page h1 {
+	font-family: var(--heading-font-family);
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+.project-page h2 {
+	font-family: var(--heading-font-family);
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+	body {
+		margin-top: 60px;
+	}
+	.portfolio-image {
+		margin: 20px;
+	}
+	.welcome-page h1 {
+		font-size: 40px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	.project-page h1 {
+		font-size: 30px;
+		margin-bottom: 5px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid var(--third-color);
+	}
+	.about-me-page h1 {
+		font-size: 30px;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+	}
+	.project-page h2 {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.contact-page h1 {
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
 }
