@@ -42,6 +42,9 @@ p {
 	padding-left: 18px;
 }
 
+.welcome-page main {
+	margin-bottom: 120px;
+}
 .welcome-page h1 {
 	font-family: var(--heading-font-family);
 	font-weight: bold;
@@ -146,6 +149,16 @@ p {
 	font-size: 30px;
 	margin-bottom: 20px;
 }
+.footer-contact-link a {
+	font-size: 40px;
+	color: #566d84;
+	margin: 30px;
+	transition: all 200ms ease;
+}
+
+.footer-contact-link a:hover {
+	color: var(--forth-color);
+}
 
 @media (max-width: 768px) {
 	body {
@@ -153,6 +166,9 @@ p {
 	}
 	.portfolio-image {
 		margin: 20px;
+	}
+	.welcome-page main {
+		margin-bottom: 0;
 	}
 	.welcome-page h1 {
 		font-size: 40px;
